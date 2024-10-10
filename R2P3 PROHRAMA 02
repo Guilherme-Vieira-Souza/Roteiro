@@ -1,0 +1,34 @@
+package roteiro2_parte3;
+
+import java.util.Scanner;
+
+public class R2P3_Programa02 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double soma = 0;
+        int quantidadeNotas = 5;
+        double[] notas = new double[quantidadeNotas];
+        
+        // Loop para ler as notas
+        for (int i = 0; i < quantidadeNotas; i++) {
+            System.out.println("Digite a nota " + (i + 1) + ":");
+            notas[i] = scanner.nextDouble();  // Lê a nota do usuário
+            soma += notas[i];  // Soma as notas
+        }
+        
+      
+        double media = soma / quantidadeNotas;
+        
+      
+        System.out.println("A média das notas é: " + media);
+        
+        // Exibe todas as notas inseridas
+        System.out.println("Notas inseridas:");
+        for (int i = 0; i < quantidadeNotas; i++) {
+            System.out.println("Nota " + (i + 1) + ": " + notas[i]);
+            
+        }
+        
+        scanner.close();  // Fecha o scanner
+    }
+}
