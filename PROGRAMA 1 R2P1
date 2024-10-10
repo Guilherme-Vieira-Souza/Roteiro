@@ -1,0 +1,23 @@
+package roteiro2_parte1;
+public class R2P1_Programa01 {
+    public static void main(String[] args) {
+        int idade = 18;
+        char letra = 'a';
+        float numeroFloat = 70.54459f;
+        double numeroDouble = 5.98774;
+        String Nome = "Guilherme";
+
+        System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+        System.out.println("Exibir: " + idade);
+        System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+        System.out.println("Exibir: " + letra);
+        System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+        System.out.println("Exibir: " + numeroFloat);
+        System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+        System.out.println("Exibir: " + numeroDouble);
+        System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+        System.out.println("Exibir: " + Nome);
+        System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+        }
+
+}
