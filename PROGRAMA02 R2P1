@@ -1,0 +1,12 @@
+package roteiro2_parte1;
+import java.util.Scanner;
+public class R2P1_Programa02 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Digite seu nome: ");
+        String nome = scan.nextLine();
+
+        System.out.println("Nome Informado: " + nome);
+    }
+
+}
