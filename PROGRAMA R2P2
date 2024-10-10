@@ -1,0 +1,21 @@
+package roteiro2_parte2;
+
+import javax.swing.JOptionPane;
+
+public class R2P2_Programa01 {
+    
+    public static void main(String[] args) {
+
+        System.out.println("Informe seu mome");
+
+        String nome =JOptionPane.showInputDialog ("informe seu nome:");
+        System.out.println("Nome Informado: " + nome);
+
+        String srtIdade = JOptionPane.showInputDialog("Informe sua Idade: ");
+        int idade = Integer.parseInt(srtIdade);
+        System.out.println("idade informada: " + idade);
+
+        JOptionPane.showMessageDialog(null, "A diferença é que na idade recebemos uma String mas temos que converter para Int, por isso Usamos este comando int idade = Integer.parseInt(srtIdade); ");
+    }
+
+}
