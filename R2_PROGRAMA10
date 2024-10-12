@@ -1,0 +1,58 @@
+package R2P3;
+import java.util.Scanner;
+
+public class PROGRAMA08 {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int[] vetorNotas = new int[5];
+        int somaNota = 0; 
+        int contadorNota = 0; 
+        double media = 0;  
+
+        
+        for (int cont = 0; cont < 5; cont++) {
+            int nota;  
+
+        
+            do {
+                System.out.println("Informe uma nota válida (entre 0 e 10):");
+                nota = entrada.nextInt();
+
+                if (nota < 0 || nota > 10) {
+                    System.out.println("Nota inválida! Tente novamente.");
+                }
+            } while (nota < 0 || nota > 10);  
+            
+            vetorNotas[cont] = nota; 
+            somaNota += nota;
+            contadorNota++;
+        }
+
+        if (contadorNota > 0) {
+            media = (double) somaNota / contadorNota;
+        }
+
+        System.out.println("A média das notas é: " + media);
+
+    
+        int mediaAlta= 0;
+
+      
+        for (int i = 0; i < vetorNotas.length; i++) {
+            if (vetorNotas[i] > media) {
+                mediaAlta++;
+            }
+        }
+
+       
+        System.out.println("Número de notas acima da média: " + mediaAlta);
+
+ 
+        System.out.println("Notas válidas informadas:");
+        for (int i = 0; i < vetorNotas.length; i++) {
+            System.out.println("Nota " + (i + 1) + ": " + vetorNotas[i]);
+        }
+
+        entrada.close();  
+    }
+}
