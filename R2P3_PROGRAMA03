@@ -1,0 +1,25 @@
+
+import java.util.Scanner;
+public class PROGRAMA03 {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+       int flag = -1;
+        
+       for (int i = 0; i < 9; i++) {
+            System.out.println("Informe uma nota ou digite -1 para encerrar o programa!!");
+            int nota = entrada.nextInt();
+        if(nota == flag){
+            System.out.println("Input encerrado!!");
+            break;
+        }
+        
+
+        if(nota >= 7){
+            System.out.println("Aprovado");
+        }else {
+            System.out.println("Reprovado");
+        }
+        }
+            }
+        
+    }
