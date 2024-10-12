@@ -4,30 +4,25 @@ import java.util.Scanner;
 
 public class R2P3_Programa02 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        double soma = 0;
-        int quantidadeNotas = 5;
-        double[] notas = new double[quantidadeNotas];
+        Scanner entrada = new Scanner(System.in);
+        int cont = 0;
+
+       for (int i = 0; i<2; i++) {
+            System.out.println("Informe uma nota");
+            int nota = entrada.nextInt();
         
-        // Loop para ler as notas
-        for (int i = 0; i < quantidadeNotas; i++) {
-            System.out.println("Digite a nota " + (i + 1) + ":");
-            notas[i] = scanner.nextDouble();  // Lê a nota do usuário
-            soma += notas[i];  // Soma as notas
+        if(nota >= 7){
+            System.out.println("Aprovado");
+        }else {
+            System.out.println("Reprovado");
         }
-        
-      
-        double media = soma / quantidadeNotas;
-        
-      
-        System.out.println("A média das notas é: " + media);
-        
-        // Exibe todas as notas inseridas
-        System.out.println("Notas inseridas:");
-        for (int i = 0; i < quantidadeNotas; i++) {
-            System.out.println("Nota " + (i + 1) + ": " + notas[i]);
-            
         }
+            }
+        
+    }
+
+
+
         
         scanner.close();  // Fecha o scanner
     }
